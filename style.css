@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+:root{
+    --Pale-blue: hsl(225, 100%, 94%);
+    --Bright-blue: hsl(245, 75%, 52%);
+    --Very-pale-blue: hsl(225, 100%, 98%);
+    --Desaturated-blue: hsl(224, 23%, 55%);
+    --Dark-blue: hsl(223, 47%, 23%);
+}
+body{
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    font-family: 'Red Hat Display', sans-serif;
+    background-image: url("images/pattern-background-desktop.svg");
+    background-repeat: no-repeat;
+    background-color: hsl(225, 100%, 94%);
+}
+.container{
+    width: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: white;
+    border-radius: 25px;
+}
+.container .top img{
+    width: 100%;
+    border-radius: 25px 25px 0px 0;
+}
+.container .box{
+    margin-top: 10px;
+    padding: 30px;
+}
+.container .box h1{
+    color: var(--Dark-blue);
+    text-align: center;
+    margin-bottom: 10px
+}
+.container .box .p{
+    color: var(--Desaturated-blue);
+    text-align: center;
+    margin-bottom: 20px;
+}
+.container .box .music{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--Very-pale-blue);
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.container .box .music .annual{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container .box .music .annual .text{
+    margin-left: 10px;
+}
+.container .box .music .annual h2{
+    color: var(--Dark-blue);
+    font-size: 16px;
+}
+.container .box .music .annual p{
+    color: var(--Desaturated-blue);
+}
+.container .box .music a{
+    color: var(--Bright-blue);
+}
+.container .box .music a:hover{
+    color: var(--Desaturated-blue);
+}
+.container .box button{
+    background-color: var(--Bright-blue);
+    border: none;
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    width: 100%;
+    font-weight: 700;
+    cursor: pointer;
+    margin-bottom: 40px;
+}
+.container .box button:hover{
+    background-color: var(--Desaturated-blue);
+}
+.container .box p{
+    text-align: center;
+    cursor: pointer;
+}
+.container .box p:hover{
+    color: var(--Desaturated-blue);
+}
+@media (max-width:375px){
+    body{
+        background-color: var(--Pale-blue);
+        background-image: url("images/pattern-background-mobile.svg");
+        background-repeat: no-repeat;
+        font-size: 10px;
+    }
+    .container{
+        width: 300px;
+    }
+}
